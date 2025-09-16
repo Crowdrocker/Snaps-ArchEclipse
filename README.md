@@ -1,4 +1,22 @@
-# **Arch Eclipse**
+<div align = center>
+  
+<a href="https://discord.gg/9bAVTCNZ">
+    <img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2Fyour-invite-code%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&style=for-the-badge&logo=discord&logoSize=auto&label=WehttamSnaps%20Community&labelColor=ebbcba&color=8A2BE2">
+</a>
+
+###### _<div align="right"><a id=-design-by-t2></a><sub>// design by t2</sub></div>_
+
+![hyde_banner](Source/assets/hyde_banner.png)
+
+<div align="center">
+  
+[![Twitch](https://img.shields.io/badge/Twitch-WehttamSnaps-9146FF?style=for-the-badge&logo=twitch)](https://www.twitch.tv/wehttamsnaps)
+[![YouTube](https://img.shields.io/badge/YouTube-WehttamSnaps-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@WehttamSnaps)
+[![GitHub](https://img.shields.io/badge/GitHub-Crowdrocker-181717?style=for-the-badge&logo=github)](https://github.com/Crowdrocker)
+
+</div>
+
+<div align="center">
 
 # Description
 
@@ -10,7 +28,7 @@ I use Arch BTW.. :)
 
 # Discord
 
-New official [Discord](https://discord.gg/fMGt4vH6s5) server.
+New official [Discord](https://discord.gg/9bAVTCNZ) server.
 
 # See Wiki
 
@@ -77,7 +95,7 @@ New official [Discord](https://discord.gg/fMGt4vH6s5) server.
 
 # KeyBinds
 
-KeyBinds are displayed and organized [Here](https://github.com/AymanLyesri/hyprland-conf/blob/master/.config/hypr/configs/keybinds.conf), be sure to check them out!
+KeyBinds are displayed and organized [Here](https://raw.githubusercontent.com/Crowdrocker/Snaps-ArchEclipse/refs/heads/master/.config/hypr/configs/keybinds.conf), be sure to check them out!
 
 # Installation and Update
 
@@ -85,14 +103,14 @@ KeyBinds are displayed and organized [Here](https://github.com/AymanLyesri/hyprl
 
 - [Arch Linux](https://archlinux.org/) (I use Arch linux BTW)
 - [Hyprland](https://hyprland.org/)
-- [Necessary packages](https://github.com/AymanLyesri/hyprland-conf/blob/master/.config/hypr/pacman/pkglist.txt) (do not worry they will be installed automatically)
+- [Necessary packages](https://github.com/Crowdrocker/Snaps-ArchEclipse/blob/master/.config/hypr/pacman/pkglist.txt) (do not worry they will be installed automatically)
 
 ## Installation Guide
 
 > Run this one liner in the terminal -- Say `Yes` to everything
 
 ```bash
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/AymanLyesri/ArchEclipse/refs/heads/master/.config/hypr/maintenance/INSTALL.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/Crowdrocker/Snaps-ArchEclipse/refs/heads/master/.config/hypr/maintenance/INSTALL.sh)"
 ```
 
 ## Update Guide
@@ -109,7 +127,7 @@ update
 - Press `SUPER + w` to select the wallpaper you like
 - Custom wallpapers should be added in `$HOME/.config/wallpapers/custom`
 - Custom hyprland configuration should be put in `$HOME/.config/hypr/configs/custom`
-- Most functionalities have associated [keybinds](https://github.com/AymanLyesri/hyprland-conf/blob/master/.config/hypr/configs/keybinds.conf). Check them out!
+- Most functionalities have associated [keybinds](https://raw.githubusercontent.com/Crowdrocker/Snaps-ArchEclipse/refs/heads/master/.config/hypr/configs/keybinds.conf). Check them out!
 
 > **Important**: If you encounter any problems, no matter how small, please feel free to open an issue. I’m happy to help! :)
 
@@ -119,7 +137,7 @@ update
 
 # Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=aymanlyesri/hyprland-conf&type=Date)](https://star-history.com/#aymanlyesri/hyprland-conf&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=Crowdrocker/hyprland-conf&type=Date)](https://star-history.com/#Crowdrocker/hyprland-conf&Date)
 
 # Visuals
 
