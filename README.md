@@ -6,7 +6,7 @@
 
 WehttamSnaps Hypr-Snaps is a modular Hyprland-based setup tailored for WehttamSnaps branding. It’s designed for gaming, streaming, and a fast, responsive workflow on Arch Linux.
 
-What’s included
+# What’s included
 - Core Hyprland config (hyprland.conf) with modular pieces
 - Waybar config and neon cyberpunk styling
 - Clickable launcher icons for Steam, Lutris, MO2, and Vortex in Waybar
@@ -16,7 +16,7 @@ What’s included
 - A ready-to-use “README-CUSTOMIZE.md” for quick branding tweaks
 - A CI workflow to validate the template structure on pushes
 
-Repo structure (high level)
+# Repo structure (high level)
 - config/hypr/hyprland.conf.template
 - config/hypr/config.d/
   - bar/ (Waybar config)
@@ -34,92 +34,29 @@ Repo structure (high level)
 - CONTRIBUTING.md
 - LICENSE
 
-Getting started
+# Getting started
 - Prerequisites: Arch Linux, NVIDIA RTX 1650 (can swap to RX580 later)
 - Install: clone this repo, copy templates to your Arch install, customize paths, and run the build script
 - Build final Hyprland config and reload Hyprland
 
-Contributing
+# Contributing
 - Fork the repository and create feature branches (e.g., feature/bar, feature/launcher, feature/workspace)
 - Open a pull request to merge into main
 - Ensure scripts pass shellcheck, and templates remain modular and well-documented
 - See CONTRIBUTING.md for more details
 
-License
+# License
 - MIT license. See LICENSE in the repo.
 
-Project governance
+# Project governance
 - This is a community-oriented starter template. You’re encouraged to adapt, extend, and share improvements.
 
-Customization quick-start
+# Customization quick-start
 - Edit Waybar’s style.css for color tweaks (cyberpunk violet-to-cyan gradient)
 - Add or modify launcher scripts under config/hypr/config.d/launcher
 - Update per-app workspaces in config/hypr/config.d/workspace/workspace-assignments.conf
 - Rebuild final config with: bash config/hypr/build-final-config.sh
 - Start Hyprland (log out/in or restart Hyprland)
-
-CI integration
-- This repo includes a CI workflow (ci.yml) to automatically validate template structure on pushes and PRs
-- The badge at the top of this README reflects CI status
-
-Next steps
-- If you want, I can tailor icons to a specific Nerd Font you have installed, add more per-app launchers, or expand workspace rules
-- I can also add a small one-page README within docs/ for branding guidelines and a quick-start checklist
-
-Block 2: ci.yml (GitHub Actions workflow)
-Code block you can paste into .github/workflows/ci.yml
-
-name: CI
-
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
-
-jobs:
-  validate-templates:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Install dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y shellcheck yamllint jq
-
-      - name: ShellCheck all scripts
-        run: |
-          bash -n scripts/**/*.sh || true
-          shellcheck scripts/**/*.sh || true
-          shellcheck config/**/*.sh || true
-
-      - name: Lint Waybar YAML
-        run: |
-          yamllint waybar/config waybar/config.yaml || true
-          true
-
-      - name: Validate Hypr layout presence
-        run: |
-          if [ ! -f config/hypr/hyprland.conf ]; then
-            echo "Missing config/hypr/hyprland.conf"
-            exit 1
-          fi
-          if [ ! -d config/hypr/config.d ]; then
-            echo "Missing config/hypr/config.d directory"
-            exit 1
-          fi
-
-      - name: Basic repo sanity
-        run: |
-          if [ ! -d config/hypr/config.d/bar ]; then echo "Missing bar module"; exit 1; fi
-          if [ ! -d config/hypr/config.d/launcher ]; then echo "Missing launcher module"; exit 1; fi
-          echo "Template structure validated."
-
-      - name: CI success
-        run: echo "CI checks passed"
-
 
 
 # Description
